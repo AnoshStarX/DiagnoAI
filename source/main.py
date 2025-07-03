@@ -80,7 +80,7 @@ os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 config_data = json.load(open(f"{working_dir}/config.json"))
 
-GROQ_API_KEY = config_data['GROQ_API_KEY']
+GROQ_API_KEY = st.secrets['GROQ_API_KEY']
 
 #save the environment variable and Groq API key
 
